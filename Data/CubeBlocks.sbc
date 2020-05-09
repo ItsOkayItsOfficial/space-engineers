@@ -1,0 +1,1453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+
+    <!-- Large Blocks -->
+    <Definition xsi:type="MyObjectBuilder_AirtightHangarDoorDefinition">
+      <Id>
+        <TypeId>AirtightHangarDoor</TypeId>
+        <SubtypeId>ForceFieldDoor0</SubtypeId>
+      </Id>
+      <DisplayName>Force Field Door Dummy</DisplayName>
+      <Icon>Textures\GUI\Icons\ForceFieldDoor0_icon.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Center x="0" y="0" z="0" />
+      <Model>Models\ForceFieldDoors\ForceFieldDoorBase_Large.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="250" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="SmallTube" Count="40" />
+        <Component Subtype="Motor" Count="16" />
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="Construction" Count="25" />
+        <Component Subtype="SteelPlate" Count="100" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr3.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr2.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>ForceFieldDoor0</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <Effects>
+        <Effect Name="Damage" ParameterMin="0.5">
+          <ParticleEffects>
+            <ParticleEffect Origin="Damage" Name="Damage_Electrical_Damaged_SolarPanels" Loop="true" SpawnTimeMin="2" SpawnTimeMax="3" />
+          </ParticleEffects>
+        </Effect>
+      </Effects>
+      <IsAirTight>true</IsAirTight>
+      <!--Sound>BlockProjectorOn</Sound-->
+      <!--PrimarySound>BlockForceFieldDoor2</PrimarySound-->
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.0001</RequiredPowerInput>
+      <PowerConsumptionIdle>0.0001</PowerConsumptionIdle>
+      <PowerConsumptionMoving>0.0001</PowerConsumptionMoving>
+      <OpeningSpeed>10</OpeningSpeed>
+      <SubpartMovementDistance>2.5</SubpartMovementDistance>
+      <GuiVisible>false</GuiVisible>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_AirtightHangarDoorDefinition">
+      <Id>
+        <TypeId>AirtightHangarDoor</TypeId>
+        <SubtypeId>ForceFieldDoor1</SubtypeId>
+      </Id>
+      <DisplayName>Force Field Door</DisplayName>
+      <Icon>Textures\GUI\Icons\ForceFieldDoor1_icon.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="2" z="1" />
+      <ModelOffset x="0" y="1.25" z="0" />
+      <Center x="0" y="1" z="0" />
+      <Model>Models\ForceFieldDoors\ForceFieldDoor1_Large.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="250" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="SmallTube" Count="30" />
+        <Component Subtype="Motor" Count="16" />
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="Superconductor" Count="100" />
+        <Component Subtype="Construction" Count="15" />
+        <Component Subtype="SteelPlate" Count="100" />
+      </Components>
+      <CriticalComponent Subtype="Superconductor" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="1.00" EndX="1.00" EndY="2.00" />
+        <MountPoint Side="Back" StartX="0.00" StartY="1.00" EndX="1.00" EndY="2.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="1.00" EndX="1.00" EndY="2.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="1.00" EndX="1.00" EndY="2.00" />
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr3.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr2.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>ForceFieldDoor1</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>24</BuildTimeSeconds>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <Effects>
+        <Effect Name="Damage" ParameterMin="0.5">
+          <ParticleEffects>
+            <ParticleEffect Origin="Damage" Name="Damage_Electrical_Damaged_SolarPanels" Loop="true" SpawnTimeMin="2" SpawnTimeMax="3" />
+          </ParticleEffects>
+        </Effect>
+      </Effects>
+      <IsAirTight>true</IsAirTight>
+      <!--Sound>BlockProjectorOn</Sound-->
+      <!--PrimarySound>BlockForceFieldDoor2</PrimarySound-->
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.03</RequiredPowerInput>
+      <PowerConsumptionIdle>0.03</PowerConsumptionIdle>
+      <PowerConsumptionMoving>0.03</PowerConsumptionMoving>
+      <OpeningSpeed>10</OpeningSpeed>
+      <SubpartMovementDistance>2.5</SubpartMovementDistance>
+      <BlockVariants>
+        <BlockVariant>
+          <TypeId>AirtightHangarDoor</TypeId>
+          <SubtypeId>ForceFieldDoor2</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>AirtightHangarDoor</TypeId>
+          <SubtypeId>ForceFieldDoor3</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>AirtightHangarDoor</TypeId>
+          <SubtypeId>ForceFieldDoor4</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>AirtightHangarDoor</TypeId>
+          <SubtypeId>ForceFieldDoor5</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>AirtightHangarDoor</TypeId>
+          <SubtypeId>ForceFieldDoor6</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>AirtightHangarDoor</TypeId>
+          <SubtypeId>ForceFieldDoor7</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>AirtightHangarDoor</TypeId>
+          <SubtypeId>ForceFieldDoor8</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>AirtightHangarDoor</TypeId>
+          <SubtypeId>ForceFieldDoor9</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>AirtightHangarDoor</TypeId>
+          <SubtypeId>ForceFieldDoor10</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>AirtightHangarDoor</TypeId>
+          <SubtypeId>ForceFieldDoor0</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_AirtightHangarDoorDefinition">
+      <Id>
+        <TypeId>AirtightHangarDoor</TypeId>
+        <SubtypeId>ForceFieldDoor2</SubtypeId>
+      </Id>
+      <DisplayName>Force Field Door</DisplayName>
+      <Icon>Textures\GUI\Icons\ForceFieldDoor2_icon.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="3" z="1" />
+      <ModelOffset x="0" y="2.5" z="0" />
+      <Center x="0" y="2" z="0" />
+      <Model>Models\ForceFieldDoors\ForceFieldDoor2_Large.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="250" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="SmallTube" Count="40" />
+        <Component Subtype="Motor" Count="16" />
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="Superconductor" Count="200" />
+        <Component Subtype="Construction" Count="25" />
+        <Component Subtype="SteelPlate" Count="100" />
+      </Components>
+      <CriticalComponent Subtype="Superconductor" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="2.00" EndX="1.00" EndY="3.00" />
+        <MountPoint Side="Back" StartX="0.00" StartY="2.00" EndX="1.00" EndY="3.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="2.00" EndX="1.00" EndY="3.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="2.00" EndX="1.00" EndY="3.00" />
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr3.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr2.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>ForceFieldDoor2</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>25</BuildTimeSeconds>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <Effects>
+        <Effect Name="Damage" ParameterMin="0.5">
+          <ParticleEffects>
+            <ParticleEffect Origin="Damage" Name="Damage_Electrical_Damaged_SolarPanels" Loop="true" SpawnTimeMin="2" SpawnTimeMax="3" />
+          </ParticleEffects>
+        </Effect>
+      </Effects>
+      <IsAirTight>true</IsAirTight>
+      <!--Sound>BlockProjectorOn</Sound-->
+      <!--PrimarySound>BlockForceFieldDoor2</PrimarySound-->
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.1</RequiredPowerInput>
+      <PowerConsumptionIdle>0.1</PowerConsumptionIdle>
+      <PowerConsumptionMoving>0.1</PowerConsumptionMoving>
+      <OpeningSpeed>10</OpeningSpeed>
+      <SubpartMovementDistance>2.5</SubpartMovementDistance>
+      <GuiVisible>false</GuiVisible>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_AirtightHangarDoorDefinition">
+      <Id>
+        <TypeId>AirtightHangarDoor</TypeId>
+        <SubtypeId>ForceFieldDoor3</SubtypeId>
+      </Id>
+      <DisplayName>Force Field Door</DisplayName>
+      <Icon>Textures\GUI\Icons\ForceFieldDoor3_icon.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="4" z="1" />
+      <ModelOffset x="0" y="3.75" z="0" />
+      <Center x="0" y="3" z="0" />
+      <Model>Models\ForceFieldDoors\ForceFieldDoor3_Large.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="250" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="SmallTube" Count="50" />
+        <Component Subtype="Motor" Count="16" />
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="Superconductor" Count="300" />
+        <Component Subtype="Construction" Count="35" />
+        <Component Subtype="SteelPlate" Count="100" />
+      </Components>
+      <CriticalComponent Subtype="Superconductor" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="3.00" EndX="1.00" EndY="4.00" />
+        <MountPoint Side="Back" StartX="0.00" StartY="3.00" EndX="1.00" EndY="4.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="3.00" EndX="1.00" EndY="4.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="3.00" EndX="1.00" EndY="4.00" />
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr3.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr2.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>ForceFieldDoor3</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>26</BuildTimeSeconds>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <Effects>
+        <Effect Name="Damage" ParameterMin="0.5">
+          <ParticleEffects>
+            <ParticleEffect Origin="Damage" Name="Damage_Electrical_Damaged_SolarPanels" Loop="true" SpawnTimeMin="2" SpawnTimeMax="3" />
+          </ParticleEffects>
+        </Effect>
+      </Effects>
+      <IsAirTight>true</IsAirTight>
+      <!--Sound>BlockProjectorOn</Sound-->
+      <!--PrimarySound>BlockForceFieldDoor2</PrimarySound-->
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.2</RequiredPowerInput>
+      <PowerConsumptionIdle>0.2</PowerConsumptionIdle>
+      <PowerConsumptionMoving>0.2</PowerConsumptionMoving>
+      <OpeningSpeed>10</OpeningSpeed>
+      <SubpartMovementDistance>2.5</SubpartMovementDistance>
+      <GuiVisible>false</GuiVisible>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_AirtightHangarDoorDefinition">
+      <Id>
+        <TypeId>AirtightHangarDoor</TypeId>
+        <SubtypeId>ForceFieldDoor4</SubtypeId>
+      </Id>
+      <DisplayName>Force Field Door</DisplayName>
+      <Icon>Textures\GUI\Icons\ForceFieldDoor4_icon.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="5" z="1" />
+      <ModelOffset x="0" y="5.00" z="0" />
+      <Center x="0" y="4" z="0" />
+      <Model>Models\ForceFieldDoors\ForceFieldDoor4_Large.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="250" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="SmallTube" Count="60" />
+        <Component Subtype="Motor" Count="16" />
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="Superconductor" Count="400" />
+        <Component Subtype="Construction" Count="45" />
+        <Component Subtype="SteelPlate" Count="100" />
+      </Components>
+      <CriticalComponent Subtype="Superconductor" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="4.00" EndX="1.00" EndY="5.00" />
+        <MountPoint Side="Back" StartX="0.00" StartY="4.00" EndX="1.00" EndY="5.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="4.00" EndX="1.00" EndY="5.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="4.00" EndX="1.00" EndY="5.00" />
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr3.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr2.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>ForceFieldDoor4</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>27</BuildTimeSeconds>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <Effects>
+        <Effect Name="Damage" ParameterMin="0.5">
+          <ParticleEffects>
+            <ParticleEffect Origin="Damage" Name="Damage_Electrical_Damaged_SolarPanels" Loop="true" SpawnTimeMin="2" SpawnTimeMax="3" />
+          </ParticleEffects>
+        </Effect>
+      </Effects>
+      <IsAirTight>true</IsAirTight>
+      <!--Sound>BlockProjectorOn</Sound-->
+      <!--PrimarySound>BlockForceFieldDoor2</PrimarySound-->
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.35</RequiredPowerInput>
+      <PowerConsumptionIdle>0.35</PowerConsumptionIdle>
+      <PowerConsumptionMoving>0.35</PowerConsumptionMoving>
+      <OpeningSpeed>10</OpeningSpeed>
+      <SubpartMovementDistance>2.5</SubpartMovementDistance>
+      <GuiVisible>false</GuiVisible>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_AirtightHangarDoorDefinition">
+      <Id>
+        <TypeId>AirtightHangarDoor</TypeId>
+        <SubtypeId>ForceFieldDoor5</SubtypeId>
+      </Id>
+      <DisplayName>Force Field Door</DisplayName>
+      <Icon>Textures\GUI\Icons\ForceFieldDoor5_icon.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="6" z="1" />
+      <ModelOffset x="0" y="6.25" z="0" />
+      <Center x="0" y="5" z="0" />
+      <Model>Models\ForceFieldDoors\ForceFieldDoor5_Large.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="250" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="SmallTube" Count="70" />
+        <Component Subtype="Motor" Count="25" />
+        <Component Subtype="Computer" Count="15" />
+        <Component Subtype="Superconductor" Count="500" />
+        <Component Subtype="Construction" Count="55" />
+        <Component Subtype="SteelPlate" Count="100" />
+      </Components>
+      <CriticalComponent Subtype="Superconductor" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="5.00" EndX="1.00" EndY="6.00" />
+        <MountPoint Side="Back" StartX="0.00" StartY="5.00" EndX="1.00" EndY="6.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="5.00" EndX="1.00" EndY="6.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="5.00" EndX="1.00" EndY="6.00" />
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr3.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr2.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>ForceFieldDoor5</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>28</BuildTimeSeconds>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <Effects>
+        <Effect Name="Damage" ParameterMin="0.5">
+          <ParticleEffects>
+            <ParticleEffect Origin="Damage" Name="Damage_Electrical_Damaged_SolarPanels" Loop="true" SpawnTimeMin="2" SpawnTimeMax="3" />
+          </ParticleEffects>
+        </Effect>
+      </Effects>
+      <IsAirTight>true</IsAirTight>
+      <!--Sound>BlockProjectorOn</Sound-->
+      <!--PrimarySound>BlockForceFieldDoor2</PrimarySound-->
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.53</RequiredPowerInput>
+      <PowerConsumptionIdle>0.53</PowerConsumptionIdle>
+      <PowerConsumptionMoving>0.53</PowerConsumptionMoving>
+      <OpeningSpeed>10</OpeningSpeed>
+      <SubpartMovementDistance>2.5</SubpartMovementDistance>
+      <GuiVisible>false</GuiVisible>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_AirtightHangarDoorDefinition">
+      <Id>
+        <TypeId>AirtightHangarDoor</TypeId>
+        <SubtypeId>ForceFieldDoor6</SubtypeId>
+      </Id>
+      <DisplayName>Force Field Door</DisplayName>
+      <Icon>Textures\GUI\Icons\ForceFieldDoor6_icon.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="7" z="1" />
+      <ModelOffset x="0" y="7.5" z="0" />
+      <Center x="0" y="6" z="0" />
+      <Model>Models\ForceFieldDoors\ForceFieldDoor6_Large.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="250" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="SmallTube" Count="80" />
+        <Component Subtype="Motor" Count="25" />
+        <Component Subtype="Computer" Count="15" />
+        <Component Subtype="Superconductor" Count="600" />
+        <Component Subtype="Construction" Count="65" />
+        <Component Subtype="SteelPlate" Count="100" />
+      </Components>
+      <CriticalComponent Subtype="Superconductor" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="6.00" EndX="1.00" EndY="7.00" />
+        <MountPoint Side="Back" StartX="0.00" StartY="6.00" EndX="1.00" EndY="7.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="6.00" EndX="1.00" EndY="7.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="6.00" EndX="1.00" EndY="7.00" />
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr3.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr2.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>ForceFieldDoor6</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>29</BuildTimeSeconds>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <Effects>
+        <Effect Name="Damage" ParameterMin="0.5">
+          <ParticleEffects>
+            <ParticleEffect Origin="Damage" Name="Damage_Electrical_Damaged_SolarPanels" Loop="true" SpawnTimeMin="2" SpawnTimeMax="3" />
+          </ParticleEffects>
+        </Effect>
+      </Effects>
+      <IsAirTight>true</IsAirTight>
+      <!--Sound>BlockProjectorOn</Sound-->
+      <!--PrimarySound>BlockForceFieldDoor2</PrimarySound-->
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.75</RequiredPowerInput>
+      <PowerConsumptionIdle>0.75</PowerConsumptionIdle>
+      <PowerConsumptionMoving>0.75</PowerConsumptionMoving>
+      <OpeningSpeed>10</OpeningSpeed>
+      <SubpartMovementDistance>2.5</SubpartMovementDistance>
+      <GuiVisible>false</GuiVisible>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_AirtightHangarDoorDefinition">
+      <Id>
+        <TypeId>AirtightHangarDoor</TypeId>
+        <SubtypeId>ForceFieldDoor7</SubtypeId>
+      </Id>
+      <DisplayName>Force Field Door</DisplayName>
+      <Icon>Textures\GUI\Icons\ForceFieldDoor7_icon.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="8" z="1" />
+      <ModelOffset x="0" y="8.75" z="0" />
+      <Center x="0" y="7" z="0" />
+      <Model>Models\ForceFieldDoors\ForceFieldDoor7_Large.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="250" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="SmallTube" Count="90" />
+        <Component Subtype="Motor" Count="25" />
+        <Component Subtype="Computer" Count="15" />
+        <Component Subtype="Superconductor" Count="700" />
+        <Component Subtype="Construction" Count="75" />
+        <Component Subtype="SteelPlate" Count="100" />
+      </Components>
+      <CriticalComponent Subtype="Superconductor" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="7.00" EndX="1.00" EndY="8.00" />
+        <MountPoint Side="Back" StartX="0.00" StartY="7.00" EndX="1.00" EndY="8.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="7.00" EndX="1.00" EndY="8.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="7.00" EndX="1.00" EndY="8.00" />
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr3.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr2.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>ForceFieldDoor7</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>30</BuildTimeSeconds>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <Effects>
+        <Effect Name="Damage" ParameterMin="0.5">
+          <ParticleEffects>
+            <ParticleEffect Origin="Damage" Name="Damage_Electrical_Damaged_SolarPanels" Loop="true" SpawnTimeMin="2" SpawnTimeMax="3" />
+          </ParticleEffects>
+        </Effect>
+      </Effects>
+      <IsAirTight>true</IsAirTight>
+      <!--Sound>BlockProjectorOn</Sound-->
+      <!--PrimarySound>BlockForceFieldDoor2</PrimarySound-->
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>1.0</RequiredPowerInput>
+      <PowerConsumptionIdle>1.0</PowerConsumptionIdle>
+      <PowerConsumptionMoving>1.0</PowerConsumptionMoving>
+      <OpeningSpeed>10</OpeningSpeed>
+      <SubpartMovementDistance>2.5</SubpartMovementDistance>
+      <GuiVisible>false</GuiVisible>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_AirtightHangarDoorDefinition">
+      <Id>
+        <TypeId>AirtightHangarDoor</TypeId>
+        <SubtypeId>ForceFieldDoor8</SubtypeId>
+      </Id>
+      <DisplayName>Force Field Door</DisplayName>
+      <Icon>Textures\GUI\Icons\ForceFieldDoor8_icon.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="9" z="1" />
+      <ModelOffset x="0" y="10.0" z="0" />
+      <Center x="0" y="8" z="0" />
+      <Model>Models\ForceFieldDoors\ForceFieldDoor8_Large.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="250" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="SmallTube" Count="100" />
+        <Component Subtype="Motor" Count="25" />
+        <Component Subtype="Computer" Count="15" />
+        <Component Subtype="Superconductor" Count="800" />
+        <Component Subtype="Construction" Count="85" />
+        <Component Subtype="SteelPlate" Count="100" />
+      </Components>
+      <CriticalComponent Subtype="Superconductor" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="8.00" EndX="1.00" EndY="9.00" />
+        <MountPoint Side="Back" StartX="0.00" StartY="8.00" EndX="1.00" EndY="9.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="8.00" EndX="1.00" EndY="9.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="8.00" EndX="1.00" EndY="9.00" />
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr3.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr2.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>ForceFieldDoor8</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>31</BuildTimeSeconds>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <Effects>
+        <Effect Name="Damage" ParameterMin="0.5">
+          <ParticleEffects>
+            <ParticleEffect Origin="Damage" Name="Damage_Electrical_Damaged_SolarPanels" Loop="true" SpawnTimeMin="2" SpawnTimeMax="3" />
+          </ParticleEffects>
+        </Effect>
+      </Effects>
+      <IsAirTight>true</IsAirTight>
+      <!--Sound>BlockProjectorOn</Sound-->
+      <!--PrimarySound>BlockForceFieldDoor2</PrimarySound-->
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>1.3</RequiredPowerInput>
+      <PowerConsumptionIdle>1.3</PowerConsumptionIdle>
+      <PowerConsumptionMoving>1.3</PowerConsumptionMoving>
+      <OpeningSpeed>10</OpeningSpeed>
+      <SubpartMovementDistance>2.5</SubpartMovementDistance>
+      <GuiVisible>false</GuiVisible>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_AirtightHangarDoorDefinition">
+      <Id>
+        <TypeId>AirtightHangarDoor</TypeId>
+        <SubtypeId>ForceFieldDoor9</SubtypeId>
+      </Id>
+      <DisplayName>Force Field Door</DisplayName>
+      <Icon>Textures\GUI\Icons\ForceFieldDoor9_icon.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="10" z="1" />
+      <ModelOffset x="0" y="11.25" z="0" />
+      <Center x="0" y="9" z="0" />
+      <Model>Models\ForceFieldDoors\ForceFieldDoor9_Large.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="250" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="SmallTube" Count="110" />
+        <Component Subtype="Motor" Count="25" />
+        <Component Subtype="Computer" Count="15" />
+        <Component Subtype="Superconductor" Count="900" />
+        <Component Subtype="Construction" Count="95" />
+        <Component Subtype="SteelPlate" Count="100" />
+      </Components>
+      <CriticalComponent Subtype="Superconductor" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="9.00" EndX="1.00" EndY="10.00" />
+        <MountPoint Side="Back" StartX="0.00" StartY="9.00" EndX="1.00" EndY="10.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="9.00" EndX="1.00" EndY="10.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="9.00" EndX="1.00" EndY="10.00" />
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr3.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr2.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>ForceFieldDoor9</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>32</BuildTimeSeconds>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <Effects>
+        <Effect Name="Damage" ParameterMin="0.5">
+          <ParticleEffects>
+            <ParticleEffect Origin="Damage" Name="Damage_Electrical_Damaged_SolarPanels" Loop="true" SpawnTimeMin="2" SpawnTimeMax="3" />
+          </ParticleEffects>
+        </Effect>
+      </Effects>
+      <IsAirTight>true</IsAirTight>
+      <!--Sound>BlockProjectorOn</Sound-->
+      <!--PrimarySound>BlockForceFieldDoor2</PrimarySound-->
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>1.6</RequiredPowerInput>
+      <PowerConsumptionIdle>1.6</PowerConsumptionIdle>
+      <PowerConsumptionMoving>1.3</PowerConsumptionMoving>
+      <OpeningSpeed>10</OpeningSpeed>
+      <SubpartMovementDistance>2.5</SubpartMovementDistance>
+      <GuiVisible>false</GuiVisible>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_AirtightHangarDoorDefinition">
+      <Id>
+        <TypeId>AirtightHangarDoor</TypeId>
+        <SubtypeId>ForceFieldDoor10</SubtypeId>
+      </Id>
+      <DisplayName>Force Field Door</DisplayName>
+      <Icon>Textures\GUI\Icons\ForceFieldDoor10_icon.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="11" z="1" />
+      <ModelOffset x="0" y="12.5" z="0" />
+      <Center x="0" y="10" z="0" />
+      <Model>Models\ForceFieldDoors\ForceFieldDoor10_Large.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="250" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="SmallTube" Count="120" />
+        <Component Subtype="Motor" Count="25" />
+        <Component Subtype="Computer" Count="15" />
+        <Component Subtype="Superconductor" Count="1000" />
+        <Component Subtype="Construction" Count="105" />
+        <Component Subtype="SteelPlate" Count="100" />
+      </Components>
+      <CriticalComponent Subtype="Superconductor" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="10.00" EndX="1.00" EndY="11.00" />
+        <MountPoint Side="Back" StartX="0.00" StartY="10.00" EndX="1.00" EndY="11.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="10.00" EndX="1.00" EndY="11.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="10.00" EndX="1.00" EndY="11.00" />
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr3.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr2.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\ForceFieldDoors\ForceFieldDoorBase_Large_Constr1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>ForceFieldDoor10</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>33</BuildTimeSeconds>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <Effects>
+        <Effect Name="Damage" ParameterMin="0.5">
+          <ParticleEffects>
+            <ParticleEffect Origin="Damage" Name="Damage_Electrical_Damaged_SolarPanels" Loop="true" SpawnTimeMin="2" SpawnTimeMax="3" />
+          </ParticleEffects>
+        </Effect>
+      </Effects>
+      <IsAirTight>true</IsAirTight>
+      <!--Sound>BlockProjectorOn</Sound-->
+      <!--PrimarySound>BlockForceFieldDoor2</PrimarySound-->
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>2.0</RequiredPowerInput>
+      <PowerConsumptionIdle>2.0</PowerConsumptionIdle>
+      <PowerConsumptionMoving>2.0</PowerConsumptionMoving>
+      <OpeningSpeed>10</OpeningSpeed>
+      <SubpartMovementDistance>2.5</SubpartMovementDistance>
+      <GuiVisible>false</GuiVisible>
+    </Definition>
+
+    <!-- Small Blocks -->
+    <Definition xsi:type="MyObjectBuilder_AirtightHangarDoorDefinition">
+      <Id>
+        <TypeId>AirtightHangarDoor</TypeId>
+        <SubtypeId>SmallForceFieldDoor0</SubtypeId>
+      </Id>
+      <DisplayName>Force Field Door Dummy</DisplayName>
+      <Icon>Textures\GUI\Icons\ForceFieldDoor0_icon.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Center x="0" y="0" z="0" />
+      <Model>Models\ForceFieldDoors\ForceFieldDoorBase_Small.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="25" />
+        <Component Subtype="Construction" Count="3" />
+        <Component Subtype="SmallTube" Count="4" />
+        <Component Subtype="Motor" Count="2" />
+        <Component Subtype="Computer" Count="1" />
+        <Component Subtype="Construction" Count="3" />
+        <Component Subtype="SteelPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr3.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr2.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>ForceFieldDoor0</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>10</BuildTimeSeconds>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <!--Effects>
+        <Effect Name="Damage" ParameterMin="0.5">
+          <ParticleEffects>
+          <ParticleEffect Origin="Damage" Name="Damage_Electrical_Damaged_SolarPanels" Loop="true" SpawnTimeMin="2" SpawnTimeMax="3" />
+          </ParticleEffects>
+        </Effect>
+      </Effects-->
+      <IsAirTight>true</IsAirTight>
+      <!--Sound>BlockProjectorOn</Sound-->
+      <!--PrimarySound>BlockForceFieldDoor2</PrimarySound-->
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.00001</RequiredPowerInput>
+      <PowerConsumptionIdle>0.00001</PowerConsumptionIdle>
+      <PowerConsumptionMoving>0.00001</PowerConsumptionMoving>
+      <OpeningSpeed>10</OpeningSpeed>
+      <SubpartMovementDistance>0.5</SubpartMovementDistance>
+      <GuiVisible>false</GuiVisible>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_AirtightHangarDoorDefinition">
+      <Id>
+        <TypeId>AirtightHangarDoor</TypeId>
+        <SubtypeId>SmallForceFieldDoor1</SubtypeId>
+      </Id>
+      <DisplayName>Force Field Door</DisplayName>
+      <Icon>Textures\GUI\Icons\ForceFieldDoor1_icon.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="2" z="1" />
+      <ModelOffset x="0" y="0.25" z="0" />
+      <Center x="0" y="1" z="0" />
+      <Model>Models\ForceFieldDoors\ForceFieldDoor1_Small.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="25" />
+        <Component Subtype="Construction" Count="3" />
+        <Component Subtype="SmallTube" Count="3" />
+        <Component Subtype="Motor" Count="2" />
+        <Component Subtype="Computer" Count="1" />
+        <Component Subtype="Superconductor" Count="10" />
+        <Component Subtype="Construction" Count="2" />
+        <Component Subtype="SteelPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="Superconductor" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="1.00" EndX="1.00" EndY="2.00" />
+        <MountPoint Side="Back" StartX="0.00" StartY="1.00" EndX="1.00" EndY="2.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="1.00" EndX="1.00" EndY="2.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="1.00" EndX="1.00" EndY="2.00" />
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr3.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr2.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>ForceFieldDoor1</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>13</BuildTimeSeconds>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <!--Effects>
+        <Effect Name="Damage" ParameterMin="0.5">
+          <ParticleEffects>
+          <ParticleEffect Origin="Damage" Name="Damage_Electrical_Damaged_SolarPanels" Loop="true" SpawnTimeMin="2" SpawnTimeMax="3" />
+          </ParticleEffects>
+        </Effect>
+      </Effects-->
+      <IsAirTight>true</IsAirTight>
+      <!--Sound>BlockProjectorOn</Sound-->
+      <!--PrimarySound>BlockForceFieldDoor2</PrimarySound-->
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.003</RequiredPowerInput>
+      <PowerConsumptionIdle>0.003</PowerConsumptionIdle>
+      <PowerConsumptionMoving>0.003</PowerConsumptionMoving>
+      <OpeningSpeed>10</OpeningSpeed>
+      <SubpartMovementDistance>0.5</SubpartMovementDistance>
+      <BlockVariants>
+        <BlockVariant>
+          <TypeId>AirtightHangarDoor</TypeId>
+          <SubtypeId>SmallForceFieldDoor2</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>AirtightHangarDoor</TypeId>
+          <SubtypeId>SmallForceFieldDoor3</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>AirtightHangarDoor</TypeId>
+          <SubtypeId>SmallForceFieldDoor4</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>AirtightHangarDoor</TypeId>
+          <SubtypeId>SmallForceFieldDoor5</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>AirtightHangarDoor</TypeId>
+          <SubtypeId>SmallForceFieldDoor6</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>AirtightHangarDoor</TypeId>
+          <SubtypeId>SmallForceFieldDoor7</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>AirtightHangarDoor</TypeId>
+          <SubtypeId>SmallForceFieldDoor8</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>AirtightHangarDoor</TypeId>
+          <SubtypeId>SmallForceFieldDoor9</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>AirtightHangarDoor</TypeId>
+          <SubtypeId>SmallForceFieldDoor10</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>AirtightHangarDoor</TypeId>
+          <SubtypeId>SmallForceFieldDoor0</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_AirtightHangarDoorDefinition">
+      <Id>
+        <TypeId>AirtightHangarDoor</TypeId>
+        <SubtypeId>SmallForceFieldDoor2</SubtypeId>
+      </Id>
+      <DisplayName>Force Field Door</DisplayName>
+      <Icon>Textures\GUI\Icons\ForceFieldDoor2_icon.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="3" z="1" />
+      <ModelOffset x="0" y="0.5" z="0" />
+      <Center x="0" y="2" z="0" />
+      <Model>Models\ForceFieldDoors\ForceFieldDoor2_Small.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="25" />
+        <Component Subtype="Construction" Count="3" />
+        <Component Subtype="SmallTube" Count="4" />
+        <Component Subtype="Motor" Count="2" />
+        <Component Subtype="Computer" Count="1" />
+        <Component Subtype="Superconductor" Count="20" />
+        <Component Subtype="Construction" Count="3" />
+        <Component Subtype="SteelPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="Superconductor" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="2.00" EndX="1.00" EndY="3.00" />
+        <MountPoint Side="Back" StartX="0.00" StartY="2.00" EndX="1.00" EndY="3.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="2.00" EndX="1.00" EndY="3.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="2.00" EndX="1.00" EndY="3.00" />
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr3.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr2.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>ForceFieldDoor2</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>13</BuildTimeSeconds>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <!--Effects>
+        <Effect Name="Damage" ParameterMin="0.5">
+          <ParticleEffects>
+          <ParticleEffect Origin="Damage" Name="Damage_Electrical_Damaged_SolarPanels" Loop="true" SpawnTimeMin="2" SpawnTimeMax="3" />
+          </ParticleEffects>
+        </Effect>
+      </Effects-->
+      <IsAirTight>true</IsAirTight>
+      <!--Sound>BlockProjectorOn</Sound-->
+      <!--PrimarySound>BlockForceFieldDoor2</PrimarySound-->
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.01</RequiredPowerInput>
+      <PowerConsumptionIdle>0.01</PowerConsumptionIdle>
+      <PowerConsumptionMoving>0.01</PowerConsumptionMoving>
+      <OpeningSpeed>10</OpeningSpeed>
+      <SubpartMovementDistance>0.5</SubpartMovementDistance>
+      <GuiVisible>false</GuiVisible>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_AirtightHangarDoorDefinition">
+      <Id>
+        <TypeId>AirtightHangarDoor</TypeId>
+        <SubtypeId>SmallForceFieldDoor3</SubtypeId>
+      </Id>
+      <DisplayName>Force Field Door</DisplayName>
+      <Icon>Textures\GUI\Icons\ForceFieldDoor3_icon.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="4" z="1" />
+      <ModelOffset x="0" y="0.75" z="0" />
+      <Center x="0" y="3" z="0" />
+      <Model>Models\ForceFieldDoors\ForceFieldDoor3_Small.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="25" />
+        <Component Subtype="Construction" Count="3" />
+        <Component Subtype="SmallTube" Count="5" />
+        <Component Subtype="Motor" Count="2" />
+        <Component Subtype="Computer" Count="1" />
+        <Component Subtype="Superconductor" Count="30" />
+        <Component Subtype="Construction" Count="4" />
+        <Component Subtype="SteelPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="Superconductor" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="3.00" EndX="1.00" EndY="4.00" />
+        <MountPoint Side="Back" StartX="0.00" StartY="3.00" EndX="1.00" EndY="4.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="3.00" EndX="1.00" EndY="4.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="3.00" EndX="1.00" EndY="4.00" />
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr3.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr2.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>ForceFieldDoor3</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>14</BuildTimeSeconds>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <!--Effects>
+        <Effect Name="Damage" ParameterMin="0.5">
+          <ParticleEffects>
+          <ParticleEffect Origin="Damage" Name="Damage_Electrical_Damaged_SolarPanels" Loop="true" SpawnTimeMin="2" SpawnTimeMax="3" />
+          </ParticleEffects>
+        </Effect>
+      </Effects-->
+      <IsAirTight>true</IsAirTight>
+      <!--Sound>BlockProjectorOn</Sound-->
+      <!--PrimarySound>BlockForceFieldDoor2</PrimarySound-->
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.02</RequiredPowerInput>
+      <PowerConsumptionIdle>0.02</PowerConsumptionIdle>
+      <PowerConsumptionMoving>0.02</PowerConsumptionMoving>
+      <OpeningSpeed>10</OpeningSpeed>
+      <SubpartMovementDistance>0.5</SubpartMovementDistance>
+      <GuiVisible>false</GuiVisible>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_AirtightHangarDoorDefinition">
+      <Id>
+        <TypeId>AirtightHangarDoor</TypeId>
+        <SubtypeId>SmallForceFieldDoor4</SubtypeId>
+      </Id>
+      <DisplayName>Force Field Door</DisplayName>
+      <Icon>Textures\GUI\Icons\ForceFieldDoor4_icon.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="5" z="1" />
+      <ModelOffset x="0" y="1.00" z="0" />
+      <Center x="0" y="4" z="0" />
+      <Model>Models\ForceFieldDoors\ForceFieldDoor4_Small.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="25" />
+        <Component Subtype="Construction" Count="3" />
+        <Component Subtype="SmallTube" Count="6" />
+        <Component Subtype="Motor" Count="2" />
+        <Component Subtype="Computer" Count="1" />
+        <Component Subtype="Superconductor" Count="40" />
+        <Component Subtype="Construction" Count="5" />
+        <Component Subtype="SteelPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="Superconductor" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="4.00" EndX="1.00" EndY="5.00" />
+        <MountPoint Side="Back" StartX="0.00" StartY="4.00" EndX="1.00" EndY="5.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="4.00" EndX="1.00" EndY="5.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="4.00" EndX="1.00" EndY="5.00" />
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr3.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr2.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>ForceFieldDoor4</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>15</BuildTimeSeconds>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <!--Effects>
+        <Effect Name="Damage" ParameterMin="0.5">
+          <ParticleEffects>
+          <ParticleEffect Origin="Damage" Name="Damage_Electrical_Damaged_SolarPanels" Loop="true" SpawnTimeMin="2" SpawnTimeMax="3" />
+          </ParticleEffects>
+        </Effect>
+      </Effects-->
+      <IsAirTight>true</IsAirTight>
+      <!--Sound>BlockProjectorOn</Sound-->
+      <!--PrimarySound>BlockForceFieldDoor2</PrimarySound-->
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.035</RequiredPowerInput>
+      <PowerConsumptionIdle>0.035</PowerConsumptionIdle>
+      <PowerConsumptionMoving>0.035</PowerConsumptionMoving>
+      <OpeningSpeed>10</OpeningSpeed>
+      <SubpartMovementDistance>0.5</SubpartMovementDistance>
+      <GuiVisible>false</GuiVisible>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_AirtightHangarDoorDefinition">
+      <Id>
+        <TypeId>AirtightHangarDoor</TypeId>
+        <SubtypeId>SmallForceFieldDoor5</SubtypeId>
+      </Id>
+      <DisplayName>Force Field Door</DisplayName>
+      <Icon>Textures\GUI\Icons\ForceFieldDoor5_icon.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="6" z="1" />
+      <ModelOffset x="0" y="1.25" z="0" />
+      <Center x="0" y="5" z="0" />
+      <Model>Models\ForceFieldDoors\ForceFieldDoor5_Small.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="25" />
+        <Component Subtype="Construction" Count="3" />
+        <Component Subtype="SmallTube" Count="7" />
+        <Component Subtype="Motor" Count="3" />
+        <Component Subtype="Computer" Count="2" />
+        <Component Subtype="Superconductor" Count="50" />
+        <Component Subtype="Construction" Count="6" />
+        <Component Subtype="SteelPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="Superconductor" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="5.00" EndX="1.00" EndY="6.00" />
+        <MountPoint Side="Back" StartX="0.00" StartY="5.00" EndX="1.00" EndY="6.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="5.00" EndX="1.00" EndY="6.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="5.00" EndX="1.00" EndY="6.00" />
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr3.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr2.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>ForceFieldDoor5</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>16</BuildTimeSeconds>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <!--Effects>
+        <Effect Name="Damage" ParameterMin="0.5">
+          <ParticleEffects>
+          <ParticleEffect Origin="Damage" Name="Damage_Electrical_Damaged_SolarPanels" Loop="true" SpawnTimeMin="2" SpawnTimeMax="3" />
+          </ParticleEffects>
+        </Effect>
+      </Effects-->
+      <IsAirTight>true</IsAirTight>
+      <!--Sound>BlockProjectorOn</Sound-->
+      <!--PrimarySound>BlockForceFieldDoor2</PrimarySound-->
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.053</RequiredPowerInput>
+      <PowerConsumptionIdle>0.053</PowerConsumptionIdle>
+      <PowerConsumptionMoving>0.053</PowerConsumptionMoving>
+      <OpeningSpeed>10</OpeningSpeed>
+      <SubpartMovementDistance>0.5</SubpartMovementDistance>
+      <GuiVisible>false</GuiVisible>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_AirtightHangarDoorDefinition">
+      <Id>
+        <TypeId>AirtightHangarDoor</TypeId>
+        <SubtypeId>SmallForceFieldDoor6</SubtypeId>
+      </Id>
+      <DisplayName>Force Field Door</DisplayName>
+      <Icon>Textures\GUI\Icons\ForceFieldDoor6_icon.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="7" z="1" />
+      <ModelOffset x="0" y="1.5" z="0" />
+      <Center x="0" y="6" z="0" />
+      <Model>Models\ForceFieldDoors\ForceFieldDoor6_Small.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="25" />
+        <Component Subtype="Construction" Count="3" />
+        <Component Subtype="SmallTube" Count="8" />
+        <Component Subtype="Motor" Count="3" />
+        <Component Subtype="Computer" Count="2" />
+        <Component Subtype="Superconductor" Count="60" />
+        <Component Subtype="Construction" Count="7" />
+        <Component Subtype="SteelPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="Superconductor" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="6.00" EndX="1.00" EndY="7.00" />
+        <MountPoint Side="Back" StartX="0.00" StartY="6.00" EndX="1.00" EndY="7.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="6.00" EndX="1.00" EndY="7.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="6.00" EndX="1.00" EndY="7.00" />
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr3.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr2.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>ForceFieldDoor6</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>17</BuildTimeSeconds>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <!--Effects>
+        <Effect Name="Damage" ParameterMin="0.5">
+          <ParticleEffects>
+          <ParticleEffect Origin="Damage" Name="Damage_Electrical_Damaged_SolarPanels" Loop="true" SpawnTimeMin="2" SpawnTimeMax="3" />
+          </ParticleEffects>
+        </Effect>
+      </Effects-->
+      <IsAirTight>true</IsAirTight>
+      <!--Sound>BlockProjectorOn</Sound-->
+      <!--PrimarySound>BlockForceFieldDoor2</PrimarySound-->
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.075</RequiredPowerInput>
+      <PowerConsumptionIdle>0.075</PowerConsumptionIdle>
+      <PowerConsumptionMoving>0.075</PowerConsumptionMoving>
+      <OpeningSpeed>10</OpeningSpeed>
+      <SubpartMovementDistance>0.5</SubpartMovementDistance>
+      <GuiVisible>false</GuiVisible>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_AirtightHangarDoorDefinition">
+      <Id>
+        <TypeId>AirtightHangarDoor</TypeId>
+        <SubtypeId>SmallForceFieldDoor7</SubtypeId>
+      </Id>
+      <DisplayName>Force Field Door</DisplayName>
+      <Icon>Textures\GUI\Icons\ForceFieldDoor7_icon.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="8" z="1" />
+      <ModelOffset x="0" y="1.75" z="0" />
+      <Center x="0" y="7" z="0" />
+      <Model>Models\ForceFieldDoors\ForceFieldDoor7_Small.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="25" />
+        <Component Subtype="Construction" Count="3" />
+        <Component Subtype="SmallTube" Count="9" />
+        <Component Subtype="Motor" Count="3" />
+        <Component Subtype="Computer" Count="2" />
+        <Component Subtype="Superconductor" Count="70" />
+        <Component Subtype="Construction" Count="8" />
+        <Component Subtype="SteelPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="Superconductor" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="7.00" EndX="1.00" EndY="8.00" />
+        <MountPoint Side="Back" StartX="0.00" StartY="7.00" EndX="1.00" EndY="8.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="7.00" EndX="1.00" EndY="8.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="7.00" EndX="1.00" EndY="8.00" />
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr3.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr2.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>ForceFieldDoor7</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>18</BuildTimeSeconds>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <!--Effects>
+        <Effect Name="Damage" ParameterMin="0.5">
+          <ParticleEffects>
+          <ParticleEffect Origin="Damage" Name="Damage_Electrical_Damaged_SolarPanels" Loop="true" SpawnTimeMin="2" SpawnTimeMax="3" />
+          </ParticleEffects>
+        </Effect>
+      </Effects-->
+      <IsAirTight>true</IsAirTight>
+      <!--Sound>BlockProjectorOn</Sound-->
+      <!--PrimarySound>BlockForceFieldDoor2</PrimarySound-->
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.10</RequiredPowerInput>
+      <PowerConsumptionIdle>0.10</PowerConsumptionIdle>
+      <PowerConsumptionMoving>0.10</PowerConsumptionMoving>
+      <OpeningSpeed>10</OpeningSpeed>
+      <SubpartMovementDistance>0.5</SubpartMovementDistance>
+      <GuiVisible>false</GuiVisible>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_AirtightHangarDoorDefinition">
+      <Id>
+        <TypeId>AirtightHangarDoor</TypeId>
+        <SubtypeId>SmallForceFieldDoor8</SubtypeId>
+      </Id>
+      <DisplayName>Force Field Door</DisplayName>
+      <Icon>Textures\GUI\Icons\ForceFieldDoor8_icon.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="9" z="1" />
+      <ModelOffset x="0" y="2.0" z="0" />
+      <Center x="0" y="8" z="0" />
+      <Model>Models\ForceFieldDoors\ForceFieldDoor8_Small.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="25" />
+        <Component Subtype="Construction" Count="3" />
+        <Component Subtype="SmallTube" Count="10" />
+        <Component Subtype="Motor" Count="3" />
+        <Component Subtype="Computer" Count="2" />
+        <Component Subtype="Superconductor" Count="80" />
+        <Component Subtype="Construction" Count="9" />
+        <Component Subtype="SteelPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="Superconductor" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="8.00" EndX="1.00" EndY="9.00" />
+        <MountPoint Side="Back" StartX="0.00" StartY="8.00" EndX="1.00" EndY="9.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="8.00" EndX="1.00" EndY="9.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="8.00" EndX="1.00" EndY="9.00" />
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr3.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr2.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>ForceFieldDoor8</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>19</BuildTimeSeconds>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <!--Effects>
+        <Effect Name="Damage" ParameterMin="0.5">
+          <ParticleEffects>
+          <ParticleEffect Origin="Damage" Name="Damage_Electrical_Damaged_SolarPanels" Loop="true" SpawnTimeMin="2" SpawnTimeMax="3" />
+          </ParticleEffects>
+        </Effect>
+      </Effects-->
+      <IsAirTight>true</IsAirTight>
+      <!--Sound>BlockProjectorOn</Sound-->
+      <!--PrimarySound>BlockForceFieldDoor2</PrimarySound-->
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.13</RequiredPowerInput>
+      <PowerConsumptionIdle>0.13</PowerConsumptionIdle>
+      <PowerConsumptionMoving>0.13</PowerConsumptionMoving>
+      <OpeningSpeed>10</OpeningSpeed>
+      <SubpartMovementDistance>0.5</SubpartMovementDistance>
+      <GuiVisible>false</GuiVisible>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_AirtightHangarDoorDefinition">
+      <Id>
+        <TypeId>AirtightHangarDoor</TypeId>
+        <SubtypeId>SmallForceFieldDoor9</SubtypeId>
+      </Id>
+      <DisplayName>Force Field Door</DisplayName>
+      <Icon>Textures\GUI\Icons\ForceFieldDoor9_icon.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="10" z="1" />
+      <ModelOffset x="0" y="2.25" z="0" />
+      <Center x="0" y="9" z="0" />
+      <Model>Models\ForceFieldDoors\ForceFieldDoor9_Small.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="25" />
+        <Component Subtype="Construction" Count="3" />
+        <Component Subtype="SmallTube" Count="11" />
+        <Component Subtype="Motor" Count="3" />
+        <Component Subtype="Computer" Count="2" />
+        <Component Subtype="Superconductor" Count="90" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="SteelPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="Superconductor" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="9.00" EndX="1.00" EndY="10.00" />
+        <MountPoint Side="Back" StartX="0.00" StartY="9.00" EndX="1.00" EndY="10.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="9.00" EndX="1.00" EndY="10.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="9.00" EndX="1.00" EndY="10.00" />
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr3.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr2.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>ForceFieldDoor9</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <!--Effects>
+        <Effect Name="Damage" ParameterMin="0.5">
+          <ParticleEffects>
+          <ParticleEffect Origin="Damage" Name="Damage_Electrical_Damaged_SolarPanels" Loop="true" SpawnTimeMin="2" SpawnTimeMax="3" />
+          </ParticleEffects>
+        </Effect>
+      </Effects-->
+      <IsAirTight>true</IsAirTight>
+      <!--Sound>BlockProjectorOn</Sound-->
+      <!--PrimarySound>BlockForceFieldDoor2</PrimarySound-->
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.16</RequiredPowerInput>
+      <PowerConsumptionIdle>0.16</PowerConsumptionIdle>
+      <PowerConsumptionMoving>0.16</PowerConsumptionMoving>
+      <OpeningSpeed>10</OpeningSpeed>
+      <SubpartMovementDistance>0.5</SubpartMovementDistance>
+      <GuiVisible>false</GuiVisible>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_AirtightHangarDoorDefinition">
+      <Id>
+        <TypeId>AirtightHangarDoor</TypeId>
+        <SubtypeId>SmallForceFieldDoor10</SubtypeId>
+      </Id>
+      <DisplayName>Force Field Door</DisplayName>
+      <Icon>Textures\GUI\Icons\ForceFieldDoor10_icon.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="11" z="1" />
+      <ModelOffset x="0" y="2.5" z="0" />
+      <Center x="0" y="10" z="0" />
+      <Model>Models\ForceFieldDoors\ForceFieldDoor10_Small.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="25" />
+        <Component Subtype="Construction" Count="3" />
+        <Component Subtype="SmallTube" Count="12" />
+        <Component Subtype="Motor" Count="3" />
+        <Component Subtype="Computer" Count="2" />
+        <Component Subtype="Superconductor" Count="100" />
+        <Component Subtype="Construction" Count="11" />
+        <Component Subtype="SteelPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="Superconductor" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="10.00" EndX="1.00" EndY="11.00" />
+        <MountPoint Side="Back" StartX="0.00" StartY="10.00" EndX="1.00" EndY="11.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="10.00" EndX="1.00" EndY="11.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="10.00" EndX="1.00" EndY="11.00" />
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr3.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr2.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\ForceFieldDoors\ForceFieldDoorBase_Small_Constr1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>ForceFieldDoor10</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>21</BuildTimeSeconds>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <!--Effects>
+        <Effect Name="Damage" ParameterMin="0.5">
+          <ParticleEffects>
+          <ParticleEffect Origin="Damage" Name="Damage_Electrical_Damaged_SolarPanels" Loop="true" SpawnTimeMin="2" SpawnTimeMax="3" />
+          </ParticleEffects>
+        </Effect>
+      </Effects-->
+      <IsAirTight>true</IsAirTight>
+      <!--Sound>BlockProjectorOn</Sound-->
+      <!--PrimarySound>BlockForceFieldDoor2</PrimarySound-->
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.2</RequiredPowerInput>
+      <PowerConsumptionIdle>0.2</PowerConsumptionIdle>
+      <PowerConsumptionMoving>0.2</PowerConsumptionMoving>
+      <OpeningSpeed>10</OpeningSpeed>
+      <SubpartMovementDistance>0.5</SubpartMovementDistance>
+      <GuiVisible>false</GuiVisible>
+    </Definition>
+
+  </CubeBlocks>
+</Definitions>

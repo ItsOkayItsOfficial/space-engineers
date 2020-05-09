@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CategoryClasses>
+
+  <!-- Hannobal Toolbar Catagory -->
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>Hannobal</DisplayName>
+      <Name>Hannobal_Large</Name>
+      <ItemIds>
+        <string>AirtightHangarDoor/ForceFieldDoor0</string>
+        <string>AirtightHangarDoor/ForceFieldDoor1</string>
+        <string>AirtightHangarDoor/ForceFieldDoor2</string>
+        <string>AirtightHangarDoor/ForceFieldDoor3</string>
+        <string>AirtightHangarDoor/ForceFieldDoor4</string>
+        <string>AirtightHangarDoor/ForceFieldDoor5</string>
+        <string>AirtightHangarDoor/ForceFieldDoor6</string>
+        <string>AirtightHangarDoor/ForceFieldDoor7</string>
+        <string>AirtightHangarDoor/ForceFieldDoor8</string>
+        <string>AirtightHangarDoor/ForceFieldDoor9</string>
+        <string>AirtightHangarDoor/ForceFieldDoor10</string>
+      </ItemIds>
+    </Category>
+
+  </CategoryClasses>
+</Definitions>
